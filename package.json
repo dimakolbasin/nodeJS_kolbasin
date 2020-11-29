@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_kolbasin",
+  "version": "1.0.0",
+  "description": "e-shop terminal management",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimakolbasin/nodeJS_kolbasin.git"
+  },
+  "author": "dima kolbasin <dimakolbasin98@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimakolbasin/nodeJS_kolbasin/issues"
+  },
+  "homepage": "https://github.com/dimakolbasin/nodeJS_kolbasin#readme"
+}
