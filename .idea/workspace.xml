@@ -19,12 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="01.12">
-      <change afterPath="$PROJECT_DIR$/addProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deleteProduct.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viewCatalog.js" afterDir="false" />
+    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="3.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/addProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleteProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/deleteProduct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,8 @@
       <workItem from="1606821496281" duration="8110000" />
       <workItem from="1606980060510" duration="1220000" />
       <workItem from="1606985222089" duration="4742000" />
-      <workItem from="1606991748046" duration="4662000" />
+      <workItem from="1606991748046" duration="5335000" />
+      <workItem from="1607001872272" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -86,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606805089435</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="3.12">
+      <created>1606998087467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606998087467</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,16 +113,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="29.11" />
     <MESSAGE value="01.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="01.12" />
+    <MESSAGE value="3.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="108" key="#Inspections" timestamp="1606988237815">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="426" y="108" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1606988237815" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606805096684">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1606998093223">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606805096684" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1606998093223" />
   </component>
 </project>

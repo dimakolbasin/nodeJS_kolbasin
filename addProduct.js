@@ -10,7 +10,8 @@ const content = file && JSON.parse(file) || [];
 async function addProduct() {
     const rl = readline.createInterface({
         input: process.stdin,
-        output: process.stdout
+        output: process.stdout,
+        terminal: false
     });
 
     console.log("Введите имя товара");

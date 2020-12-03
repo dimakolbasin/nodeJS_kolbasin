@@ -7,7 +7,8 @@ const {deleteProduct} = require('./deleteProduct');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
+    terminal: false
 });
 
 askQuestion();
