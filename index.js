@@ -3,8 +3,6 @@ const {addProduct} = require('./addProduct');
 const {viewCatalog} = require('./viewCatalog');
 const {deleteProduct} = require('./deleteProduct');
 
-
-
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -12,7 +10,6 @@ const rl = readline.createInterface({
 });
 
 askQuestion();
-
 
 async function askQuestion () {
     console.log(
@@ -22,11 +19,7 @@ async function askQuestion () {
         " 3. Удалить товар  \n");
 
     rl.question('выберите действие: ', (answer) => {
-
-
         manageAnswer(`${answer}`);
-
-
     })
 }
 

@@ -1,15 +1,10 @@
 const readline = require('readline');
 const fs = require("fs");
 const path = require("path");
-
-const {catalog} = require('./dataModule');
-const {getInput} = require('./dataModule');
-const {readFile} = require('./dataModule');
-
-
+const {catalog, getInput, readFile, jsonContent} = require('./dataModule');
 const dirPath = path.resolve(__dirname, "data");
 const filePath = path.resolve(dirPath, "data.json");
-const file = readFile(filePath)
+const file = readFile(filePath);
 let content = file && JSON.parse(file) || [];
 
 async function deleteProduct() {
@@ -17,20 +12,13 @@ async function deleteProduct() {
         input: process.stdin,
         output: process.stdout,
         terminal: false
-
     });
 
-    let answer
-    answer = await getInput(rl);
+    let answer = await getInput(rl);
     delete catalog[answer];
-    content = []
-    content.push(catalog);
-
-    const jsonContent = JSON.stringify(content, null, 2);
-    fs.mkdirSync(dirPath, {recursive: true});
-    fs.writeFileSync(filePath, jsonContent);
-
-
+    content = [];
+    catalog.forEach(element => content.push(element));
+    jsonContent(content);
 }
 
 

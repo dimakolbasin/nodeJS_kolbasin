@@ -25,6 +25,8 @@
       <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataModule.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deleteProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/deleteProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/viewCatalog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <workItem from="1606980060510" duration="1220000" />
       <workItem from="1606985222089" duration="4742000" />
       <workItem from="1606991748046" duration="5335000" />
-      <workItem from="1607001872272" duration="9288000" />
+      <workItem from="1607001872272" duration="10727000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -114,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607010516309</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="3.12">
+      <created>1607011207004</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607011207004</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,9 +156,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1607007459543" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1607010519653">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1607011209246">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1607010519653" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1607011209246" />
   </component>
 </project>

@@ -2,7 +2,9 @@ const catalog = require('./data/data.json');
 const readline = require('readline');
 const fs = require("fs");
 const path = require("path");
-
+const dirPath = path.resolve(__dirname, "data");
+const filePath = path.resolve(dirPath, "data.json");
+const file = readFile(filePath);
 
 function getInput(rl) {
     return new Promise(resolve => {
@@ -19,8 +21,15 @@ function readFile(filePath) {
 
 }
 
+function jsonContent(content) {
+    const jsonContent = JSON.stringify(content, null, 2);
+    fs.mkdirSync(dirPath, {recursive: true});
+    fs.writeFileSync(filePath, jsonContent);
+}
+
 module.exports = {
     catalog,
     getInput,
-    readFile
+    readFile,
+    jsonContent
 }

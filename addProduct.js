@@ -1,12 +1,7 @@
 const readline = require('readline');
-
-const {catalog} = require('./dataModule');
-const {getInput} = require('./dataModule');
-const {readFile} = require('./dataModule');
-
+const {catalog, getInput, readFile, jsonContent} = require('./dataModule');
 const fs = require("fs");
 const path = require("path");
-
 const dirPath = path.resolve(__dirname, "data");
 const filePath = path.resolve(dirPath, "data.json");
 const file = readFile(filePath)
@@ -31,17 +26,10 @@ async function addProduct() {
         count: count,
         price: price
     });
-
     content = [];
-    content.push(catalog);
-
-    const jsonContent = JSON.stringify(catalog, null, 2);
-    fs.mkdirSync(dirPath, {recursive: true});
-    fs.writeFileSync(filePath, jsonContent);
-
+    catalog.forEach(element => content.push(element));
+    jsonContent(content);
 }
-
-
 
 module.exports = {
     addProduct
