@@ -1,8 +1,11 @@
-const catalog = require('./data/data.json');
+let {catalog} = require('./catalog');
 
 function viewCatalog() {
+
     console.table(catalog);
+
 }
+
 
 module.exports = {
     viewCatalog

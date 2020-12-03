@@ -53,11 +53,12 @@ async function manageAnswer(answer) {
         case 3:
             console.log('удаление товара\n');
             await deleteProduct();
+            console.log('товар удален');
             askQuestion();
             break;
 
         default:
-            console.log('не работает')
+            console.log('не верный выбор, перезапустите программу и попробуйте еще раз');
             rl.close();
     }
 }
