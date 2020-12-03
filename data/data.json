@@ -1,9 +1,9 @@
-[{
-  "product": "iphone 1",
-  "count": "1",
-  "price": "1000"
-},
-
+[
+  {
+    "product": "iphone 1",
+    "count": "1",
+    "price": "1000"
+  },
   {
     "product": "iphone 2",
     "count": "1",
@@ -14,7 +14,6 @@
     "count": "1",
     "price": "1000"
   },
-
   {
     "product": "iphone 4",
     "count": "1",

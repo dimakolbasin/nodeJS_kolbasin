@@ -1,54 +1,64 @@
-const catalog = require('./data.json');
-
 const readline = require('readline');
+const {addProduct} = require('./addProduct');
+const {viewCatalog} = require('./viewCatalog');
+const {deleteProduct} = require('./deleteProduct');
 
 
-
-console.log(
-    " 1. Список товаров \n" +
-    " 2. Добавить товар \n" +
-    " 3. Изменить товар \n" +
-    " 4. Удалить товар  \n" +
-    " 5.    Выход       \n");
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-delay();
+askQuestion();
 
 
+async function askQuestion () {
+    console.log(
+        " 0.    Выход       \n" +
+        " 1. Список товаров \n" +
+        " 2. Добавить товар \n" +
+        " 3. Удалить товар  \n");
 
-
-
-function delay () {
     rl.question('выберите действие: ', (answer) => {
-
 
         /*console.log(`вы выбрали: ${answer}`);*/
 
-        qwe(`${answer}`);
-
-        rl.close()
+        manageAnswer(`${answer}`);
 
 
     })
 }
 
-function qwe(answer) {
-    let answer;
-    answer = getInput(rl);
+async function manageAnswer(answer) {
+
     switch (parseInt(answer)) {
+        case 0:
+            rl.close();
+            break;
+
         case 1:
-            console.table(catalog);
+            await viewCatalog();
+            askQuestion();
+            break;
+
+        case 2:
+            console.log('Добавление товара\n');
+            await addProduct();
+            console.log('товар добавлен');
+            askQuestion();
+            break;
+
+        case 3:
+            console.log('удаление товара\n');
+            await deleteProduct();
+            askQuestion();
             break;
 
         default:
             console.log('не работает')
+            rl.close();
     }
-
 }
-
 
 
