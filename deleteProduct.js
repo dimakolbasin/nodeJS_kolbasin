@@ -2,8 +2,10 @@ const readline = require('readline');
 const fs = require("fs");
 const path = require("path");
 
-const {catalog} = require('./dataModule')
-const {getInput} = require('./dataModule')
+const {catalog} = require('./dataModule');
+const {getInput} = require('./dataModule');
+const {readFile} = require('./dataModule');
+
 
 const dirPath = path.resolve(__dirname, "data");
 const filePath = path.resolve(dirPath, "data.json");
@@ -31,14 +33,6 @@ async function deleteProduct() {
 
 }
 
-
-
-function readFile(filePath) {
-    if (fs.existsSync(filePath)) {
-        return fs.readFileSync(filePath);
-    }
-
-}
 
 module.exports = {
     deleteProduct

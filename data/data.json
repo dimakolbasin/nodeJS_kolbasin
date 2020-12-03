@@ -5,11 +5,6 @@
     "price": "1000"
   },
   {
-    "product": "iphone 3",
-    "count": "1",
-    "price": "1000"
-  },
-  {
     "product": "iphone 4",
     "count": "1",
     "price": "1000"
@@ -38,5 +33,10 @@
     "product": "iphone 500",
     "count": "1",
     "price": "1212212"
+  },
+  {
+    "product": "1",
+    "count": "1",
+    "price": "1"
   }
 ]

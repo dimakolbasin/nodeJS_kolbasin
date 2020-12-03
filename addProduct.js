@@ -1,7 +1,8 @@
 const readline = require('readline');
 
-const {catalog} = require('./dataModule')
-const {getInput} = require('./dataModule')
+const {catalog} = require('./dataModule');
+const {getInput} = require('./dataModule');
+const {readFile} = require('./dataModule');
 
 const fs = require("fs");
 const path = require("path");
@@ -40,14 +41,6 @@ async function addProduct() {
 
 }
 
-
-
-function readFile(filePath) {
-    if (fs.existsSync(filePath)) {
-        return fs.readFileSync(filePath);
-    }
-
-}
 
 
 module.exports = {
