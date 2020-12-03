@@ -23,7 +23,6 @@ async function askQuestion () {
 
     rl.question('выберите действие: ', (answer) => {
 
-        /*console.log(`вы выбрали: ${answer}`);*/
 
         manageAnswer(`${answer}`);
 
@@ -51,7 +50,7 @@ async function manageAnswer(answer) {
             break;
 
         case 3:
-            console.log('удаление товара\n');
+            console.log('удаление товара по ID\n');
             await deleteProduct();
             console.log('товар удален');
             askQuestion();

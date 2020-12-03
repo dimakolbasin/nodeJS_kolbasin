@@ -1,4 +1,4 @@
-let {catalog} = require('./catalog');
+let {catalog} = require('./dataModule');
 
 function viewCatalog() {
 

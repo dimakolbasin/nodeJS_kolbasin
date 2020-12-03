@@ -1,14 +1,15 @@
 const readline = require('readline');
 
-const {catalog} = require('./catalog')
+const {catalog} = require('./dataModule')
+const {getInput} = require('./dataModule')
 
-/*const fs = require("fs");
-const path = require("path");*/
+const fs = require("fs");
+const path = require("path");
 
-/*const dirPath = path.resolve(__dirname, "data");
+const dirPath = path.resolve(__dirname, "data");
 const filePath = path.resolve(dirPath, "data.json");
 const file = readFile(filePath)
-const content = file && JSON.parse(file) || [];*/
+let content = file && JSON.parse(file) || [];
 
 async function addProduct() {
     const rl = readline.createInterface({
@@ -30,28 +31,23 @@ async function addProduct() {
         price: price
     });
 
+    content = [];
+    content.push(catalog);
+
     const jsonContent = JSON.stringify(catalog, null, 2);
-    /*fs.mkdirSync(dirPath, {recursive: true});
-    fs.writeFileSync(filePath, jsonContent);*/
+    fs.mkdirSync(dirPath, {recursive: true});
+    fs.writeFileSync(filePath, jsonContent);
 
 }
 
 
-function getInput(rl) {
-    return new Promise(resolve => {
-        rl.question("Ввод: ", answer => {
-            resolve(answer);
-        })
-    })
-}
 
-
-/*function readFile(filePath) {
+function readFile(filePath) {
     if (fs.existsSync(filePath)) {
         return fs.readFileSync(filePath);
     }
 
-}*/
+}
 
 
 module.exports = {
