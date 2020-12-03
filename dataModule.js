@@ -6,6 +6,13 @@ const dirPath = path.resolve(__dirname, "data");
 const filePath = path.resolve(dirPath, "data.json");
 const file = readFile(filePath);
 
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    terminal: false
+});
+
 function getInput(rl) {
     return new Promise(resolve => {
         rl.question("Ввод: ", answer => {
@@ -31,5 +38,6 @@ module.exports = {
     catalog,
     getInput,
     readFile,
-    jsonContent
+    jsonContent,
+    rl
 }

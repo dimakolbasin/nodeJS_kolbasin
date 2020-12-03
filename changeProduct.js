@@ -1,15 +1,16 @@
 const readline = require('readline');
-const {catalog, getInput, readFile, jsonContent} = require('./dataModule');
 const fs = require("fs");
 const path = require("path");
+const {catalog, getInput, readFile, jsonContent} = require('./dataModule');
 const dirPath = path.resolve(__dirname, "data");
 const filePath = path.resolve(dirPath, "data.json");
-const file = readFile(filePath)
+const file = readFile(filePath);
 let content = file && JSON.parse(file) || [];
 const {rl} = require('./dataModule');
 
-async function addProduct() {
-
+async function changeProduct() {
+    console.log("Введите ID изменяемого товара");
+    let answer = await getInput(rl);
 
     console.log("Введите имя товара");
     let product = await getInput(rl);
@@ -18,16 +19,21 @@ async function addProduct() {
     console.log("Введите цену товара");
     let price = await getInput(rl);
 
-    catalog.push({
+    let newProductData = ({
         product: product,
         count: count,
         price: price
     });
+
+    catalog[answer] = newProductData;
     content = [];
     catalog.forEach(element => content.push(element));
     jsonContent(content);
 }
 
+
+
+
 module.exports = {
-    addProduct
+    changeProduct
 }

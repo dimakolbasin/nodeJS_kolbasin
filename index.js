@@ -1,13 +1,10 @@
-const readline = require('readline');
+/*const readline = require('readline');*/
 const {addProduct} = require('./addProduct');
 const {viewCatalog} = require('./viewCatalog');
 const {deleteProduct} = require('./deleteProduct');
+const {changeProduct} = require('./changeProduct');
+const {rl} = require('./dataModule');
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-    terminal: false
-});
 
 askQuestion();
 
@@ -16,7 +13,8 @@ async function askQuestion () {
         " 0.    Выход       \n" +
         " 1. Список товаров \n" +
         " 2. Добавить товар \n" +
-        " 3. Удалить товар  \n");
+        " 3. Удалить товар  \n" +
+        " 4. Изменить товар  \n");
 
     rl.question('выберите действие: ', (answer) => {
         manageAnswer(`${answer}`);
@@ -46,6 +44,13 @@ async function manageAnswer(answer) {
             console.log('удаление товара по ID\n');
             await deleteProduct();
             console.log('товар удален');
+            askQuestion();
+            break;
+
+        case 4:
+            console.log('изменение товара\n');
+            await changeProduct();
+            console.log('товар изменен');
             askQuestion();
             break;
 
