@@ -19,14 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="3.12">
-      <change afterPath="$PROJECT_DIR$/changeProduct.js" afterDir="false" />
+    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="4.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/addProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changeProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/changeProduct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deleteProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/deleteProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <workItem from="1606980060510" duration="1220000" />
       <workItem from="1606985222089" duration="4742000" />
       <workItem from="1606991748046" duration="5335000" />
-      <workItem from="1607001872272" duration="13168000" />
+      <workItem from="1607001872272" duration="13715000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607012646548</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="4.12">
+      <created>1607032479392</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607032479392</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +156,8 @@
     <MESSAGE value="29.11" />
     <MESSAGE value="01.12" />
     <MESSAGE value="3.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.12" />
+    <MESSAGE value="4.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="426" y="108" key="#Inspections" timestamp="1606988237815">
@@ -163,9 +168,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1607007459543" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1607012650485">
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1607032484120">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1607012650485" />
+    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1607032484120" />
   </component>
 </project>
