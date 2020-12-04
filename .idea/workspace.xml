@@ -23,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/addProduct.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/changeProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/changeProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deleteProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/deleteProduct.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +64,7 @@
       <workItem from="1606985222089" duration="4742000" />
       <workItem from="1606991748046" duration="5335000" />
       <workItem from="1607001872272" duration="13715000" />
+      <workItem from="1607069818074" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>

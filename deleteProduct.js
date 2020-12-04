@@ -11,8 +11,7 @@ async function deleteProduct() {
 
     let answer = await getInput(rl);
     delete catalog[answer];
-    content = [];
-    catalog.forEach(element => content.push(element));
+    content = [...catalog];
     jsonContent(content);
 }
 

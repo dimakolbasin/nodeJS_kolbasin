@@ -25,8 +25,7 @@ async function changeProduct() {
     });
 
     catalog[answer] = newProductData;
-    content = [];
-    catalog.forEach(element => content.push(element));
+    content = [...catalog];
     jsonContent(content);
 }
 

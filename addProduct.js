@@ -22,8 +22,7 @@ async function addProduct() {
         count: count,
         price: price
     });
-    content = [];
-    catalog.forEach(element => content.push(element));
+    content = [...catalog];
     jsonContent(content);
 }
 
