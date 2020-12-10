@@ -5,7 +5,7 @@ const {deleteProduct} = require('./deleteProduct');
 const {changeProduct} = require('./changeProduct');
 const {rl} = require('./dataModule');
 
-
+/*sss*/
 askQuestion();
 
 async function askQuestion () {
