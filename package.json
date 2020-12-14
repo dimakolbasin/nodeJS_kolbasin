@@ -2,9 +2,11 @@
   "name": "nodejs_kolbasin",
   "version": "1.0.0",
   "description": "e-shop terminal management",
-  "main": "index.js",
+  "main": "manage_data/index.js",
   "scripts": {
-    "start": "index.js"
+    "start": "node src/index.js",
+    "serve": "nodemon --inspect src/index.js",
+    "manage": "node manage_data/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/dimakolbasin/nodeJS_kolbasin/issues"
   },
-  "homepage": "https://github.com/dimakolbasin/nodeJS_kolbasin#readme"
+  "homepage": "https://github.com/dimakolbasin/nodeJS_kolbasin#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }

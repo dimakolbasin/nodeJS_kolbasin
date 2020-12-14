@@ -20,7 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="4.12">
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/catalog.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/changeCatalog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/dataModule.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/home.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/fragments/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/fragments/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/catalog/add.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/catalog/change.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/catalog/menu.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/catalog/view.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/pages/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage_data/addProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/changeProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage_data/changeProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage_data/dataModule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleteProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage_data/deleteProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage_data/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viewCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/manage_data/viewCatalog.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +60,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kolbasin_d" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/pages/catalog" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages\catalog" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\controllers" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\repositories" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages\home" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\manage_data" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,6 +99,7 @@
       <workItem from="1607001872272" duration="13715000" />
       <workItem from="1607069818074" duration="205000" />
       <workItem from="1607598170143" duration="21000" />
+      <workItem from="1607599134204" duration="43174000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -157,19 +195,5 @@
     <MESSAGE value="3.12" />
     <MESSAGE value="4.12" />
     <option name="LAST_COMMIT_MESSAGE" value="4.12" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="426" y="108" key="#Inspections" timestamp="1606988237815">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="426" y="108" key="#Inspections/0.0.1600.860@0.0.1600.860" timestamp="1606988237815" />
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607007459543">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860@0.0.1600.860" timestamp="1607007459543" />
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2" timestamp="1607032484120">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="392" y="163" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1607032484120" />
   </component>
 </project>

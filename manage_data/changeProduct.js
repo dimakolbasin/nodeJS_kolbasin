@@ -1,11 +1,12 @@
 const readline = require('readline');
+const {catalog, getInput, readFile, jsonContent, rl} = require('./dataModule');
+
 const fs = require("fs");
 const path = require("path");
-const {catalog, getInput, readFile, jsonContent, rl} = require('./dataModule');
 const dirPath = path.resolve(__dirname, "data");
 const filePath = path.resolve(dirPath, "data.json");
 const file = readFile(filePath);
-let content = file && JSON.parse(file) || [];
+let content = file && JSON.parse(file) || []; //читаем файл
 
 async function changeProduct() {
     console.log("Введите ID изменяемого товара");

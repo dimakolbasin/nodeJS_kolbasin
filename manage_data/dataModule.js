@@ -23,13 +23,13 @@ function getInput(rl) {
 
 function readFile(filePath) {
     if (fs.existsSync(filePath)) {
-        return fs.readFileSync(filePath);
+        return fs.readFileSync(filePath); //читаем файл
     }
 
 }
 
 function jsonContent(content) {
-    const jsonContent = JSON.stringify(content, null, 2);
+    const jsonContent = JSON.stringify(content, null, 2);  //записываем в файл
     fs.mkdirSync(dirPath, {recursive: true});
     fs.writeFileSync(filePath, jsonContent);
 }

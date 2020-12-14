@@ -1,0 +1,41 @@
+[
+  {
+    "id": "0",
+    "product": "123",
+    "price": "123",
+    "count": "123"
+  },
+  {
+    "id": "1",
+    "product": "тестинг",
+    "price": "123",
+    "count": "123"
+  },
+  {
+    "product": "1",
+    "price": "1",
+    "count": "1"
+  },
+  {
+    "product": "приает",
+    "price": "пока",
+    "count": "привет"
+  },
+  {
+    "product": "1",
+    "price": "1",
+    "count": "1"
+  },
+  {
+    "id": "5",
+    "product": "5",
+    "price": "5",
+    "count": "5"
+  },
+  {
+    "id": "6",
+    "product": "7",
+    "price": "7",
+    "count": "7"
+  }
+]

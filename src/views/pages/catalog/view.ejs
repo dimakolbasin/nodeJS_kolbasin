@@ -1,0 +1,25 @@
+<%- include('../../fragments/header.ejs'); %>
+<%- include('./menu.ejs'); %>
+
+<div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Продукт</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% catalog.forEach(catalog => { %>
+                    <tr>
+                        <td><%= catalog.product %></td>
+                        <td><%= catalog.price %></td>
+                        <td><%= catalog.count %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+</div>
+
+<%- include('../../fragments/footer.ejs'); %>
