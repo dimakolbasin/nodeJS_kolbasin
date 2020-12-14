@@ -6,36 +6,39 @@
     "count": "123"
   },
   {
-    "id": "1",
+    "id": 1,
     "product": "тестинг",
-    "price": "123",
-    "count": "123"
+    "count": "123",
+    "price": "123"
   },
   {
+    "id": 2,
     "product": "1",
-    "price": "1",
-    "count": "1"
+    "count": "1",
+    "price": "1"
   },
   {
+    "id": 3,
     "product": "приает",
-    "price": "пока",
-    "count": "привет"
+    "count": "привет",
+    "price": "пока"
   },
   {
+    "id": 4,
     "product": "1",
-    "price": "1",
-    "count": "1"
+    "count": "1",
+    "price": "1"
   },
   {
-    "id": "5",
+    "id": 5,
     "product": "5",
-    "price": "5",
-    "count": "5"
+    "count": "5",
+    "price": "5"
   },
   {
-    "id": "6",
+    "id": 6,
     "product": "7",
-    "price": "7",
-    "count": "7"
+    "count": "7",
+    "price": "7"
   }
 ]

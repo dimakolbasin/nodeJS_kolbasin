@@ -1,8 +1,13 @@
 const {jsonContent, content} = require('./dataModule.js');
 
 function addProduct(product) {
+
+    let arrNew = content.map((item, index) => {
+        return {id: index, product: item.product, count: item.count, price: item.price};
+    })
+
     content.push(product);
-    jsonContent(content);
+    jsonContent(arrNew);
 }
 
 function changeProduct(product, productID) {
