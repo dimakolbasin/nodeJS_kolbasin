@@ -1,8 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-const filePath = path.resolve(__dirname, "data.json");
+const filePath = path.resolve(__dirname, "../../data/data.json");
 const file = readFile(filePath);
-let content = file && JSON.parse(file) || [];
+let content = file && JSON.parse(file) || []; //найди катлог и распарсь его или создай новый массив
+
+
 
 function readFile(filePath) {
     if (fs.existsSync(filePath)) {

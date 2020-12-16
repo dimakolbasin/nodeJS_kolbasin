@@ -2,11 +2,12 @@ const {jsonContent, content} = require('./dataModule.js');
 
 function addProduct(product) {
 
+    content.push(product);
+
     let arrNew = content.map((item, index) => {
         return {id: index, product: item.product, count: item.count, price: item.price};
     })
 
-    content.push(product);
     jsonContent(arrNew);
 }
 
@@ -16,7 +17,12 @@ function changeProduct(product, productID) {
 
 }
 
+function findProductId(id) {
+    return content.find(product => product.id == [id]);
+}
+
 module.exports = {
     addProduct,
-    changeProduct
+    changeProduct,
+    findProductId
 }

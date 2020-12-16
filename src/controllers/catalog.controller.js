@@ -1,6 +1,6 @@
 const { Router } = require('express');
 
-const catalog = require('./data.json');
+const catalog = require('../../data/data.json');
 
 const {addProduct, changeProduct} = require('./changeCatalog.js');
 
