@@ -19,19 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="14.12 express">
-      <change afterPath="$PROJECT_DIR$/src/controllers/api/catalog.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/api/index.js" afterDir="false" />
+    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="16.12 ajax">
+      <change afterPath="$PROJECT_DIR$/src/public/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/catalog.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/catalog.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/api/catalog.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/api/catalog.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/changeCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/changeCatalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/dataModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/dataModule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/home.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/fragments/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/fragments/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/fragments/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/fragments/header.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +88,7 @@
       <workItem from="1607936854316" duration="464000" />
       <workItem from="1608023785937" duration="2026000" />
       <workItem from="1608036085661" duration="9958000" />
-      <workItem from="1608114949386" duration="9665000" />
+      <workItem from="1608114949386" duration="12832000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -186,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607937308841</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="16.12 ajax">
+      <created>1608130242170</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608130242170</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +212,7 @@
     <MESSAGE value="3.12" />
     <MESSAGE value="4.12" />
     <MESSAGE value="14.12 express" />
-    <option name="LAST_COMMIT_MESSAGE" value="14.12 express" />
+    <MESSAGE value="16.12 ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.12 ajax" />
   </component>
 </project>

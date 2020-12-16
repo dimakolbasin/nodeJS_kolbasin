@@ -12,8 +12,13 @@ function addProduct(product) {
 }
 
 function changeProduct(product, productID) {
-        content[productID] = (product);
-        jsonContent(content);
+    content[productID] = (product);
+
+    let arrNew = content.map((item, index) => {
+        return {id: index, product: item.product, count: item.count, price: item.price};
+    })
+
+        jsonContent(arrNew);
 
 }
 

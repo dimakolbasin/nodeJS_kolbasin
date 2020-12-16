@@ -29,4 +29,13 @@ router.post('/', (request, response) => {
         .json(newProduct);
 });
 
+router.put('/:id',(request, response) => {
+    const changeProd = changeProduct(request.body, request.params.id);
+    response
+        .status(201)
+        .json(changeProd);
+});
+
+
+
 module.exports = router;
