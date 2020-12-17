@@ -12,6 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(controllers); //указываем папку в которой лежит index.js
 
+app.use(express.static(path.resolve(__dirname, 'public')));
+
 /*app.get('/', function (req, res) {
     res.send('ss12312321312sssd12323dasds');
 })*/

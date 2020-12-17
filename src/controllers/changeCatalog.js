@@ -19,7 +19,34 @@ function changeProduct(product, productID) {
     })
 
         jsonContent(arrNew);
+}
 
+function patchProduct(product, productID) {
+
+
+    content[productID] = {...content[productID], ...product};
+
+    let arrNew = content.map((item, index) => {
+        return {id: index, product: item.product, count: item.count, price: item.price};
+    })
+
+    jsonContent(arrNew)
+
+}
+
+function deleteProduct(productID) {
+
+    delete content[productID];
+
+    let filterArr = content.filter(function(item) {
+        return item != null;
+    });
+
+    let arrNew = filterArr.map((item, index) => {
+        return {id: index, product: item.product, count: item.count, price: item.price};
+    })
+
+    jsonContent(arrNew);
 }
 
 function findProductId(id) {
@@ -29,5 +56,7 @@ function findProductId(id) {
 module.exports = {
     addProduct,
     changeProduct,
-    findProductId
+    findProductId,
+    patchProduct,
+    deleteProduct
 }

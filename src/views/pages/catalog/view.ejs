@@ -18,6 +18,7 @@
                         <td><%= catalog.product %></td>
                         <td><%= catalog.price %></td>
                         <td><%= catalog.count %></td>
+                        <td><button onclick="deleteProductFetch('http://localhost:3000/api/catalog/<%= catalog.id %>')">X</button></td>
                     </tr>
                 <% }); %>
             </tbody>

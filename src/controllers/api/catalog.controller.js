@@ -3,7 +3,7 @@ const router = new Router();
 
 const catalog = require('../../../data/data.json');
 
-const {addProduct, changeProduct, findProductId} = require('../changeCatalog.js');
+const {addProduct, changeProduct, findProductId, patchProduct, deleteProduct} = require('../changeCatalog.js');
 
 
 
@@ -36,6 +36,18 @@ router.put('/:id',(request, response) => {
         .json(changeProd);
 });
 
+router.patch('/:id',(request, response) => {
+    const patchProd = patchProduct(request.body, request.params.id);
+    response
+        .status(201)
+        .json(patchProd);
+});
 
+router.delete('/:id',(request, response) => {
+    const deleteProd = deleteProduct(request.params.id);
+    response
+        .status(201)
+        .json(deleteProd);
+});
 
 module.exports = router;
