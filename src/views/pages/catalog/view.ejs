@@ -9,16 +9,17 @@
                     <th>Продукт</th>
                     <th>Цена</th>
                     <th>Количество</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 <% catalog.forEach(catalog => { %>
-                    <tr>
+                    <tr class="product-<%= catalog.id %>">
                         <td><%= catalog.id %></td>
                         <td><%= catalog.product %></td>
                         <td><%= catalog.price %></td>
                         <td><%= catalog.count %></td>
-                        <td><button onclick="deleteProductFetch('http://localhost:3000/api/catalog/<%= catalog.id %>')">X</button></td>
+                        <td><button onclick="deleteProductFetch('http://localhost:3000/api/catalog/<%= catalog.id %>', <%= catalog.id %>)" >X</button></td>
                     </tr>
                 <% }); %>
             </tbody>

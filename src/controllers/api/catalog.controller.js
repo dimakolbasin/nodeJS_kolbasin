@@ -46,7 +46,7 @@ router.patch('/:id',(request, response) => {
 router.delete('/:id',(request, response) => {
     const deleteProd = deleteProduct(request.params.id);
     response
-        .status(201)
+        .status(200)
         .json(deleteProd);
 });
 
