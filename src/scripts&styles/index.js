@@ -1,5 +1,5 @@
 import './style.css'
-
+/**/
 document.onclick = event => {
     if (event.target.classList.contains('drop__product')) {
         const dataId = event.target.dataset.id;

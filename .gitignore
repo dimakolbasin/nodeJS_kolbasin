@@ -282,6 +282,6 @@ $RECYCLE.BIN/
 
 # gitkeep ignore
 
-!/src/public/.gitkeep
+!./src/public/.gitkeep
 
 # End of https://www.toptal.com/developers/gitignore/api/node,vscode,jetbrains+all,windows,macos,linux
