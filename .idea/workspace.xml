@@ -19,23 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="17.12 ajax">
-      <change afterPath="$PROJECT_DIR$/.babelrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts&amp;styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.common.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.dev.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.prod.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="22.12 webpack">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts&amp;styles/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/fragments/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/fragments/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/fragments/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/fragments/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/pages/catalog/view.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +86,7 @@
       <workItem from="1608036085661" duration="9958000" />
       <workItem from="1608114949386" duration="30070000" />
       <workItem from="1608544821499" duration="22414000" />
-      <workItem from="1608645848740" duration="4232000" />
+      <workItem from="1608645848740" duration="5823000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -229,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608213414606</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="22.12 webpack">
+      <created>1608650329566</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608650329566</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +247,7 @@
     <MESSAGE value="14.12 express" />
     <MESSAGE value="16.12 ajax" />
     <MESSAGE value="17.12 ajax" />
-    <option name="LAST_COMMIT_MESSAGE" value="17.12 ajax" />
+    <MESSAGE value="22.12 webpack" />
+    <option name="LAST_COMMIT_MESSAGE" value="22.12 webpack" />
   </component>
 </project>
