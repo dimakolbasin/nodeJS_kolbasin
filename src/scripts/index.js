@@ -1,4 +1,4 @@
-import './style.css'
+import '../styles/style.css'
 /**/
 document.onclick = event => {
     if (event.target.classList.contains('drop__product')) {
@@ -17,3 +17,4 @@ function deleteProductFetch(url, id) {
     }).then()
 
 }
+
