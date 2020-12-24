@@ -21,9 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="24.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/test.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/test.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/test.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.common.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.prod.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +59,11 @@
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages\catalog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets\img" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\styles" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\scripts&amp;styles" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages" />
-      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages\home" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -91,7 +92,7 @@
       <workItem from="1608114949386" duration="30070000" />
       <workItem from="1608544821499" duration="22414000" />
       <workItem from="1608645848740" duration="8688000" />
-      <workItem from="1608805365517" duration="9495000" />
+      <workItem from="1608805365517" duration="11124000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -282,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608820597763</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="24.12">
+      <created>1608821483835</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1608821483836</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
