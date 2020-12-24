@@ -12,10 +12,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(ttf|eot|svg|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                use: [{
-                    loader: 'file-loader'
-                }]
+                test: /\.(png|jpg|jpeg|svg)/,
+                use: 'file-loader'
             },
             {
                 test: /\.js/,
