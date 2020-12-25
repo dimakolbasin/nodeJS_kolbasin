@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="24.12">
+      <change afterPath="$PROJECT_DIR$/src/scripts/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/test.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/st---------yle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.common.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.dev.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.dev.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.prod.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +52,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/user" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\god\Desktop\nodeJS_kolbasin\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,11 +64,11 @@
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages\catalog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets\img" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\styles" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\scripts" />
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets\img" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\scripts&amp;styles" />
-      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -92,7 +97,8 @@
       <workItem from="1608114949386" duration="30070000" />
       <workItem from="1608544821499" duration="22414000" />
       <workItem from="1608645848740" duration="8688000" />
-      <workItem from="1608805365517" duration="11124000" />
+      <workItem from="1608805365517" duration="11428000" />
+      <workItem from="1608885178102" duration="5451000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -290,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608821483836</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="24.12">
+      <created>1608823171797</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1608823171797</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -10,7 +10,7 @@ app.set('views', path.resolve(__dirname, 'views'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(controllers); //указываем папку в которой лежит index.js для контроллеров
+app.use(controllers); //указываем папку в которой лежит 12.js для контроллеров
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 

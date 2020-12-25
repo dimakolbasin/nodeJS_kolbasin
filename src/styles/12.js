@@ -1,4 +1,4 @@
-import '../styles/style.css'
+import '../scripts/style.css'
 /**/
 document.onclick = event => {
     if (event.target.classList.contains('drop__product')) {

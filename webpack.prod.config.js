@@ -5,21 +5,35 @@ const commonConfig = require('./webpack.common.config')
 module.exports = merge(commonConfig, {
     mode: "production",
     output: {
-        filename: '[name].[contenthash].js'
+        filename: '[name].js'
     },
     module: {
         rules: [
             {
+                test: /\.less$/,
+                use: [
+                    miniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader",
+                    },
+                    {
+                        loader: "less-loader",
+                    }
+                ],
+            }
+
+            /*{
                 test: /\.css$/,
                 use: [
                     miniCssExtractPlugin.loader,
                     'css-loader',
                     'postcss-loader'
                 ]
-            }
+            }*/
         ]
     },
     plugins: [
         new miniCssExtractPlugin()
     ]
 })
+
