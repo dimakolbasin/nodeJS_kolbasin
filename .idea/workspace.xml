@@ -19,17 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="24.12">
-      <change afterPath="$PROJECT_DIR$/src/scripts/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/style.less" afterDir="false" />
+    <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="25.12 промежуточный">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/12.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/st---------yle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/catalog.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/catalog.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/home.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/fragments/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/fragments/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/add.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/add.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/change.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/change.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/menu.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/menu.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/view.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/pages/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/user/fragments/footer.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/user/fragments/header.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/user/pages/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/pages/home.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.common.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.dev.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.dev.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.prod.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +70,11 @@
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages\catalog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\admin" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\styles" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\scripts" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets\img" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets" />
-      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\scripts&amp;styles" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -98,7 +104,7 @@
       <workItem from="1608544821499" duration="22414000" />
       <workItem from="1608645848740" duration="8688000" />
       <workItem from="1608805365517" duration="11428000" />
-      <workItem from="1608885178102" duration="5451000" />
+      <workItem from="1608885178102" duration="10651000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -303,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608823171797</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="25.12 промежуточный">
+      <created>1608893413515</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1608893413515</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +344,7 @@
     <MESSAGE value="17.12 ajax" />
     <MESSAGE value="22.12 webpack" />
     <MESSAGE value="24.12" />
-    <option name="LAST_COMMIT_MESSAGE" value="24.12" />
+    <MESSAGE value="25.12 промежуточный" />
+    <option name="LAST_COMMIT_MESSAGE" value="25.12 промежуточный" />
   </component>
 </project>

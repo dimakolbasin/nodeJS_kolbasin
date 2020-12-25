@@ -1,6 +1,6 @@
 const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-/*const EsLintWebpackPlugin = require('eslint-webpack-plugin')*/
+/*const { CleanWebpackPlugin } = require('clean-webpack-plugin')*/
+const EsLintWebpackPlugin = require('eslint-webpack-plugin')
 
 
 module.exports = {
@@ -30,9 +30,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
-        /*new EsLintWebpackPlugin({
+        /*new CleanWebpackPlugin(),*/
+        new EsLintWebpackPlugin({
             fix: true
-        })*/
+        })
     ]
 }

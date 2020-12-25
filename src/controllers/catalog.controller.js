@@ -8,11 +8,11 @@ const {addProduct, changeProduct} = require('./changeCatalog.js');
 const router = new Router();
 
 router.get('/', (request, response) => {
-    response.render('pages/catalog/view', { catalog });
+    response.render('admin/pages/catalog/view', { catalog });
 });
 
 router.get('/add', (request, response) => {
-    response.render('pages/catalog/add');
+    response.render('admin/pages/catalog/add');
 });
 
 
@@ -23,7 +23,7 @@ router.post('/add',(request, response) => {
 
 
 router.get('/change', (request, response) => {
-    response.render('pages/catalog/change');
+    response.render('admin/pages/catalog/change');
 });
 
 

@@ -6,7 +6,7 @@ const apiControllers = require('./api');
 const router = new Router();
 
 router.use('/', homeController);
-router.use('/catalog', catalogController);
+router.use('/admin', catalogController);
 router.use('/api', apiControllers);
 
 module.exports = router;

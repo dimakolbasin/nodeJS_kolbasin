@@ -1,3 +1,281 @@
-<%- include('../fragments/header.ejs'); %>
+<%- include('../../fragments/header.ejs'); %>
+<!--header-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <span><span class="header__logo-color-grey">Techno</span><span class="header__logo-color-white">Point</span></span>
+            </div>
+            <div class="header__nav">
+                <div class="btn_nav">
+                    <input type="search" placeholder="search" class="header__search">
+                </div>
+                <div class="header__btn btn_hide">
+                    <a class="icon" href="#"><img class="img-nav" src="img/icon/like.png" alt="like"></a>
+                </div>
+                <div class="header__btn btn_hide">
+                    <a class="icon" href="#"><img class="img-nav" src="img/icon/mail.png" alt="mail"></a>
+                </div>
 
-<%- include('../fragments/footer.ejs'); %>
+                <div class="header__btn open-cart">
+                    <a class="icon" href="#"><img class="img-nav" src="img/icon/basket.png" alt="basket"></a>
+                </div>
+                <div class="body-counter" id="body-counter">
+
+                </div>
+                <div class="header__btn btn_hide">
+                    <a class="icon" href="#"><img class="img-nav" src="img/icon/logout.png" alt="logout"></a>
+                </div>
+
+                <div class="header__btn burger-nav">
+                    <a class="icon" href="#"><img class="img-nav" src="img/icon/burger.png" alt="logout"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--nav-->
+<nav class="navigation">
+    <ul class="navigation__list">
+        <li>
+            <a href="#">Каталог</a>
+            <ul>
+                <li><a href="#">apple</a></li>
+                <li><a href="#">samsung</a></li>
+                <li><a href="#">moto</a></li>
+                <li><a href="#">fly</a></li>
+                <li><a href="#">sony</a></li>
+                <li><a href="#">xiaomi</a></li>
+                <li><a href="#">honor</a></li>
+                <li><a href="#">lenovo</a></li>
+                <li><a href="#">meizu</a></li>
+                <li><a href="#">micro</a></li>
+                <li><a href="#">lg</a></li>
+                <li><a href="#">high</a></li>
+                <li><a href="#">xgody</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">главная</a>
+            <ul>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">доставка</a>
+            <ul>
+
+            </ul>
+        </li>
+        <li>
+            <a href="#">о нас</a>
+            <ul>
+
+            </ul>
+        </li>
+    </ul>
+</nav>
+<!--main-->
+<main>
+    <div class="container container-main">
+        <div class="container-box">
+            <div class="container__main-img">
+                <a href="#"><img  src="img/333.png" alt="sss"></a>
+            </div>
+
+            <div class="container__staff">
+                <div class="staff">
+                    <div class="staff__item">
+                        <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
+                        <h4 class="staff__title">iphone xr 512gb</h4>
+                        <h3 class="staff__price">1300$</h3>
+                        <div class="staff__icon-trash">
+                            <button data-id="0" class="staff__btn-add btn-plus">
+                                <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
+                            </button>
+                            <button class="staff__btn-add btn-minus">
+                                <img class="staff__trash-img" src="img/icon/bascket2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="staff__item">
+                        <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
+                        <h4 class="staff__title">iphone xr 256gb</h4>
+                        <h3 class="staff__price">1100$</h3>
+                        <div class="staff__icon-trash">
+                            <button data-id="1" class="staff__btn-add btn-plus">
+                                <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
+                            </button>
+                            <button class="staff__btn-add btn-minus">
+                                <img class="staff__trash-img" src="img/icon/bascket2.png" alt="">
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="staff__item">
+                        <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
+                        <h4 class="staff__title">iphone xr 128gb</h4>
+                        <h3 class="staff__price">900$</h3>
+                        <div class="staff__icon-trash">
+                            <button data-id="2" class="staff__btn-add btn-plus">
+                                <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
+                            </button>
+                            <button class="staff__btn-add btn-minus">
+                                <img class="staff__trash-img" src="img/icon/bascket2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="staff__item">
+                        <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
+                        <h4 class="staff__title">iphone xr 64gb</h4>
+                        <h3 class="staff__price">799$</h3>
+                        <div class="staff__icon-trash">
+                            <button data-id="3" class="staff__btn-add btn-plus">
+                                <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
+                            </button>
+                            <button class="staff__btn-add btn-minus">
+                                <img class="staff__trash-img" src="img/icon/bascket2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="staff__item">
+                        <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
+                        <h4 class="staff__title">iphone xr 64gb dual sim</h4>
+                        <h3 class="staff__price">1000$</h3>
+                        <div class="staff__icon-trash">
+                            <button data-id="4" class="staff__btn-add btn-plus">
+                                <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
+                            </button>
+                            <button class="staff__btn-add btn-minus">
+                                <img class="staff__trash-img" src="img/icon/bascket2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="staff__item">
+                        <a href=""><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
+                        <h4 class="staff__title">iphone xr 128gb dual sim</h4>
+                        <h3 class="staff__price">1300$</h3>
+                        <div class="staff__icon-trash">
+                            <button data-id="5" class="staff__btn-add btn-plus">
+                                <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
+                            </button>
+                            <button class="staff__btn-add btn-minus"><img class="staff__trash-img" src="img/icon/bascket2.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__call">
+                <h5 class="footer__call-text">обратная связь</h5>
+            </div>
+            <div class="footer__logo">
+                <a class="footer__logo-social" href="#"><img src="img/icon/facebook-logo.png" alt="fb"></a>
+                <a class="footer__logo-social" href="#"><img src="img/icon/twitter.png" alt="tw"></a>
+                <a class="footer__logo-social" href="#"><img src="img/icon/vk.png" alt="vk"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--modal window-->
+<template id="modal">
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__title">
+                <h5 class="modal__bascket-name">Корзина</h5>
+            </div>
+            <div class="list">
+                <div class="list__container">
+                    <div class="list__item">
+                        <div class="list__ul">
+                            <div>
+                                <span>товар</span>
+                            </div>
+                            <div>
+                                <span>количество</span>
+                            </div>
+                            <div>
+                                <span>цена за штуку</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list__product" id="list-product">
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal__btn-container">
+                <button class="modal__btn-buy">купить сейчас</button>
+                <button class="modal__btn-drop">очистить корзину</button>
+                <button class="modal__btn-close">выйти</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="product-line">
+    <div class="items" id="items" >
+        <span id="name"></span>
+        <span id="count"></span>
+        <span id="price"></span>
+        <span id="drop-product"><button>x</button></span>
+    </div>
+</template>
+
+<template id="counterTemplate">
+    <div>
+        <button type="button" class="jsDecrease">-</button>
+        <input type="text" class="jsValue" value="0" />
+        <button type="button" class="jsIncrease">+</button>
+    </div>
+</template>
+
+<div id="modal-wrapper"></div>
+<!--<div class="modal-bg"></div>-->
+
+<!--preloader-->
+<div class="loader">
+
+    <div class="loader__container">
+        <div class="wBall" id="wBall_1">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+            <div class="wInnerBall"></div>
+        </div>
+    </div>
+
+</div>
+
+<!--modal iphone -->
+<div class="modal-phone-container">
+
+    <div class="modal-phone">
+        <div class="modal-phone__text"><a class="modal-phone__item" href="#">избранное</a></div>
+        <div class="modal-phone__text"><a class="modal-phone__item" href="#">почта</a></div>
+        <div class="modal-phone__text"><a class="modal-phone__item" href="#">покинуть аккаунт</a></div>
+        <div class="modal-phone__text"><a class="modal-phone__item" href="#">закрыть меню</a></div>
+    </div>
+
+</div>
+<%- include('../../fragments/footer.ejs'); %>

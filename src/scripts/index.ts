@@ -1,5 +1,6 @@
 import '../styles/style.less'
 /**/
+
 document.onclick = event => {
     if ((<HTMLInputElement>event.target).classList.contains('drop__product')) {
         const dataId: string = (<HTMLInputElement>event.target).dataset.id;
@@ -7,7 +8,6 @@ document.onclick = event => {
         deleteProductFetch(dataUrl, dataId);
     }
 }
-
 function deleteProductFetch (url, id) {
     const item = document.querySelector('.product-' + id);
     item.remove();
