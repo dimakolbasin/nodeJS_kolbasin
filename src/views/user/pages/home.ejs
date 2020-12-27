@@ -1,5 +1,5 @@
 <%- include('../../fragments/header.ejs'); %>
-<!--header-->
+    <!--header-->
 <header class="header">
     <div class="container">
         <div class="header__inner">
@@ -82,15 +82,15 @@
             <div class="container__main-img">
                 <a href="#"><img  src="img/333.png" alt="sss"></a>
             </div>
-
             <div class="container__staff">
                 <div class="staff">
+                    <% catalog.forEach(catalog => { %>
                     <div class="staff__item">
                         <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
-                        <h4 class="staff__title">iphone xr 512gb</h4>
-                        <h3 class="staff__price">1300$</h3>
+                        <h4 class="staff__title"><%= catalog.name %></h4>
+                        <h3 class="staff__price"><%= catalog.price %>$</h3>
                         <div class="staff__icon-trash">
-                            <button data-id="0" class="staff__btn-add btn-plus">
+                            <button data-id="<%= catalog.id %>" class="staff__btn-add btn-plus">
                                 <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
                             </button>
                             <button class="staff__btn-add btn-minus">
@@ -98,7 +98,8 @@
                             </button>
                         </div>
                     </div>
-
+                    <%});%>
+<!--
                     <div class="staff__item">
                         <a href="#"><img class="staff__icon" src="img/img-phone/xs%20jet%20black.png" alt=""></a>
                         <h4 class="staff__title">iphone xr 256gb</h4>
@@ -165,7 +166,7 @@
                                 <img class="staff__trash-img" src="img/icon/bascket1.png" alt="">
                             </button>
                             <button class="staff__btn-add btn-minus"><img class="staff__trash-img" src="img/icon/bascket2.png" alt="">
-                            </button>
+                            </button>-->
                         </div>
                     </div>
                 </div>
@@ -278,4 +279,6 @@
     </div>
 
 </div>
+
+
 <%- include('../../fragments/footer.ejs'); %>

@@ -1,26 +1,38 @@
 [
   {
     "id": 0,
-    "product": "123123",
-    "count": "123123",
-    "price": "123123"
+    "name": "IPHONE XR 512GB",
+    "price": 1111,
+    "count": "0"
   },
   {
     "id": 1,
-    "product": "21",
-    "count": "12",
-    "price": "12"
+    "name": "IPHONE XR 256GB",
+    "price": 1234,
+    "count": "0"
   },
   {
     "id": 2,
-    "product": "123",
-    "count": "123",
-    "price": "123"
+    "name": "IPHONE XR 128GB",
+    "price": 900,
+    "count": 0
   },
   {
     "id": 3,
-    "product": "",
-    "count": "",
-    "price": ""
+    "name": "IPHONE XR 64GB",
+    "price": 799,
+    "count": 0
+  },
+  {
+    "id": 4,
+    "name": "IPHONE XR 64GB DUAL SIM",
+    "price": 1000,
+    "count": 0
+  },
+  {
+    "id": 5,
+    "name": "IPHONE XR 128GB DUAL SIM",
+    "price": 1300,
+    "count": 0
   }
 ]

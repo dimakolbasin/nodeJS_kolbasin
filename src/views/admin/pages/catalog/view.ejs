@@ -20,7 +20,7 @@
                 <% catalog.forEach(catalog => { %>
                     <tr class="product-<%= catalog.id %>">
                         <td><%= catalog.id %></td>
-                        <td><%= catalog.product %></td>
+                        <td><%= catalog.name %></td>
                         <td><%= catalog.price %></td>
                         <td><%= catalog.count %></td>
                         <td><button class="drop__product" data-id="<%= catalog.id %>" data-url="http://localhost:3000/api/catalog/<%= catalog.id %>">X</button></td>

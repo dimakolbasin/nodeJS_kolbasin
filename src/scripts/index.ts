@@ -3,6 +3,12 @@ import '../styles/style.less'
 import { deleteProductFetch } from "./adminUtils"
 import {Popup} from "./popUp";
 
+// @ts-ignore
+import * as data from '../../data/data.json';
+
+
+
+
 const listProductsInCart: Map<string, any> = new Map();
 
 
@@ -101,7 +107,10 @@ const closeModalPhone = () => {
 
 
 
-let generalCatalog = [
+// @ts-ignore
+let generalCatalog = data.splice(generalCatalogs);
+
+let generalCatalogs = [
     {name: 'IPHONE XR 512GB', price: 1300, count: 0, totalPrice: 0},
     {name: 'IPHONE XR 256GB', price: 1100, count: 0, totalPrice: 0},
     {name: 'IPHONE XR 128GB', price: 900, count: 0, totalPrice: 0},
@@ -154,6 +163,7 @@ const addToCart = (index) => {
         listProductsInCart.set(index, productFromCart);
 
 
+
     } else {
         const product = catalog[index];
         /*listProductsInCart.price = priceItem;*/
@@ -162,7 +172,10 @@ const addToCart = (index) => {
         listProductsInCart.set(index, product);
 
 
+
+
     }
+
 
     const bodyCounter: HTMLElement = document.querySelector('.body-counter')
         bodyCounter.innerText = String((counterCart()));

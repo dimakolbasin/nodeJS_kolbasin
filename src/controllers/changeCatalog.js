@@ -5,7 +5,7 @@ function addProduct(product) {
     content.push(product);
 
     let arrNew = content.map((item, index) => {
-        return {id: index, product: item.product, count: item.count, price: item.price};
+        return {id: index, name: item.name, price: Number(item.price), count: item.count};
     })
 
     jsonContent(arrNew);
@@ -15,7 +15,7 @@ function changeProduct(product, productID) {
     content[productID] = (product);
 
     let arrNew = content.map((item, index) => {
-        return {id: index, product: item.product, count: item.count, price: item.price};
+        return {id: index, name: item.name, price: Number(item.price), count: item.count};
     })
 
         jsonContent(arrNew);
@@ -27,7 +27,7 @@ function patchProduct(product, productID) {
     content[productID] = {...content[productID], ...product};
 
     let arrNew = content.map((item, index) => {
-        return {id: index, product: item.product, count: item.count, price: item.price};
+        return {id: index, name: item.name, price: Number(item.price), count: item.count};
     })
 
     jsonContent(arrNew)
@@ -43,7 +43,7 @@ function deleteProduct(productID) {
     });
 
     let arrNew = filterArr.map((item, index) => {
-        return {id: index, product: item.product, count: item.count, price: item.price};
+        return {id: index, name: item.name, price: Number(item.price), count: item.count};
     })
 
     jsonContent(arrNew);
