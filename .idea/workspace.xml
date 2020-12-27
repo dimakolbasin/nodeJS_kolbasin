@@ -20,22 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="25.12 промежуточный">
+      <change afterPath="$PROJECT_DIR$/src/scripts/adminUtils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/counter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/popUp.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/productLine.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/catalog.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/catalog.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/home.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/fragments/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/fragments/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/add.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/add.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/change.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/change.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/menu.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/menu.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/catalog/view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/view.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/pages/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/fragments/footer.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/user/fragments/header.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/user/pages/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/pages/home.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.common.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.prod.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.prod.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="js.last.introduce.type" value="CONST" />
+    <property name="js.last.introduce.type" value="LET" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/views/user" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -70,12 +65,73 @@
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\pages\catalog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\public" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\views\admin" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\styles" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\scripts" />
       <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets\img" />
-      <recent name="C:\Users\god\Desktop\nodeJS_kolbasin\src\assets" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.serveAll">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="build:prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build:prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="client-watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="client-watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serveAll" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serveAll" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serveAll" />
+        <item itemvalue="npm.client-watch" />
+        <item itemvalue="npm.serve" />
+        <item itemvalue="npm.build:prod" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,7 +160,7 @@
       <workItem from="1608544821499" duration="22414000" />
       <workItem from="1608645848740" duration="8688000" />
       <workItem from="1608805365517" duration="11428000" />
-      <workItem from="1608885178102" duration="10651000" />
+      <workItem from="1608885178102" duration="40879000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -316,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608893413515</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="25.12 промежуточный">
+      <created>1608900365604</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1608900365604</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

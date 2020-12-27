@@ -1,14 +1,19 @@
 const path = require('path')
-/*const { CleanWebpackPlugin } = require('clean-webpack-plugin')*/
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const EsLintWebpackPlugin = require('eslint-webpack-plugin')
+const CopyPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
     entry: path.resolve(__dirname, 'src/scripts/index.ts'),
+    devtool: 'inline-source-map',
     output: {
         publicPath: '/',
         path: path.resolve(__dirname, 'src/public'),
         filename: 'main.js'
+    },
+    resolve: {
+        extensions: ['.js', '.ts']
     },
     module: {
         rules: [
@@ -30,7 +35,13 @@ module.exports = {
         ]
     },
     plugins: [
-        /*new CleanWebpackPlugin(),*/
+        new CleanWebpackPlugin(),
+        new CopyPlugin({
+            patterns: [
+                { from: "img", to: "img" }
+            ],
+        }),
+
         new EsLintWebpackPlugin({
             fix: true
         })
