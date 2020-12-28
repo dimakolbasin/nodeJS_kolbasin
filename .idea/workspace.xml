@@ -20,18 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="27.12 промежуточный">
-      <change afterPath="$PROJECT_DIR$/data/cart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/colors.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/common.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/container.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/footer.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/header.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/mediaQueries/media1024.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/mediaQueries/media450.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/mediaQueries/media530.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/mediaQueries/media736.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/mediaQueries/media768.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/mediaQueries/media820.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/modal.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/modalPhone.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/navigation.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/preloader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/staff.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/changeCatalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/changeCatalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/home.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/st---------yle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/12.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/pages/catalog/add.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/add.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/pages/catalog/change.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/change.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/pages/catalog/view.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/pages/catalog/view.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/user/pages/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/user/pages/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.common.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +171,7 @@
       <workItem from="1608544821499" duration="22414000" />
       <workItem from="1608645848740" duration="8688000" />
       <workItem from="1608805365517" duration="11428000" />
-      <workItem from="1608885178102" duration="52400000" />
+      <workItem from="1608885178102" duration="66725000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>
@@ -387,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609068833969</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="27.12 промежуточный">
+      <created>1609100002795</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1609100002797</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

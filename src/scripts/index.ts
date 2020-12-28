@@ -111,15 +111,27 @@ const closeModalPhone = () => {
 let generalCatalog = data.splice(generalCatalogs);
 
 let generalCatalogs = [
-    {name: 'IPHONE XR 512GB', price: 1300, count: 0, totalPrice: 0},
+/*    {name: 'IPHONE XR 512GB', price: 1300, count: 0, totalPrice: 0},
     {name: 'IPHONE XR 256GB', price: 1100, count: 0, totalPrice: 0},
     {name: 'IPHONE XR 128GB', price: 900, count: 0, totalPrice: 0},
     {name: 'IPHONE XR 64GB', price: 799, count: 0, totalPrice: 0},
     {name: 'IPHONE XR 64GB DUAL SIM', price: 1000, count: 0, totalPrice: 0},
-    {name: 'IPHONE XR 128GB DUAL SIM', price: 1300, count: 0, totalPrice: 0}
+    {name: 'IPHONE XR 128GB DUAL SIM', price: 1300, count: 0, totalPrice: 0}*/
 ];
 
 const productsWithDiscount = ['IPHONE XR 512GB', 'IPHONE XR 256GB', 'IPHONE XR 128GB'];
+
+function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
+
+    return generalCatalog.map((product) => {
+        if(productsWithDiscount.includes(product.name)){
+            return transformPriceByDiscount(product);
+        } else {
+            return product;
+        }
+
+    })
+}
 
 const newDiscount = (discount) => {
     return (price) => {
@@ -136,17 +148,6 @@ const transformPriceByDiscount = (product) => {
 }
 
 
-function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
-
-    return generalCatalog.map((product) => {
-        if(productsWithDiscount.includes(product.name)){
-            return transformPriceByDiscount(product);
-        } else {
-            return product;
-        }
-
-    })
-}
 
 /**/
 
@@ -166,7 +167,6 @@ const addToCart = (index) => {
 
     } else {
         const product = catalog[index];
-        /*listProductsInCart.price = priceItem;*/
         ++product.count;
         product.totalPrice = product.count * product.price;
         listProductsInCart.set(index, product);

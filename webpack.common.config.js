@@ -13,7 +13,7 @@ module.exports = {
         filename: 'main.js'
     },
     resolve: {
-        extensions: ['.js', '.ts']
+        extensions: [".ts", ".js", ".less"]
     },
     module: {
         rules: [
@@ -25,12 +25,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|jpeg|svg)/,
                 use: 'file-loader'
-            }/*,
-            {
-                test: /\.js/,
-                exclude: /node_modules/,
-                use: 'babel-loader'
-            }*/
+            }
 
         ]
     },

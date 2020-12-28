@@ -20,8 +20,8 @@
   "homepage": "https://github.com/dimakolbasin/nodeJS_kolbasin#readme",
   "dependencies": {
     "ejs": "^3.1.5",
-    "normalize.css": "^8.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
