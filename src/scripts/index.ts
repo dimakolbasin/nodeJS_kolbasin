@@ -9,6 +9,7 @@ import * as data from '../../data/data.json';
 
 
 
+
 const listProductsInCart: Map<string, any> = new Map();
 
 
@@ -164,15 +165,11 @@ const addToCart = (index) => {
         listProductsInCart.set(index, productFromCart);
 
 
-
     } else {
         const product = catalog[index];
         ++product.count;
         product.totalPrice = product.count * product.price;
         listProductsInCart.set(index, product);
-
-
-
 
     }
 
