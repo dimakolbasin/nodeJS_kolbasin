@@ -33,7 +33,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new CopyPlugin({
             patterns: [
-                { from: "img", to: "img" }
+                { from: "src/assets/themes/base/img", to: "img" }
             ],
         }),
 

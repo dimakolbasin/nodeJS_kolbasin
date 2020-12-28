@@ -1,32 +1,20 @@
 import {ProductLine} from "./productLine";
 
-
 export class Popup {
 
     cartCounter: HTMLElement;
-
-    modalWrapper: HTMLElement
-
-    modal: HTMLTemplateElement
-
+    modalWrapper: HTMLElement;
+    modal: HTMLTemplateElement;
     wrapper: HTMLElement;
     private listProductsInCart: Map<string, any>;
 
     constructor(listProductsInCart: Map<string, any>) {
 
-        this.listProductsInCart = listProductsInCart
-
+        this.listProductsInCart = listProductsInCart;
         this.modal = <HTMLTemplateElement>document.getElementById('modal');
-
         this.modalWrapper = document.getElementById('modal-wrapper');
-
         this.cartCounter = document.getElementById('body-counter');
-
-
-
         const content = document.importNode(this.modal.content, true);
-
-
         const contentEvent: HTMLElement = content.querySelector('.modal__btn-close');
 
         contentEvent.onclick = (event:MouseEvent) => {
@@ -38,16 +26,13 @@ export class Popup {
         };
 
         this.wrapper = content.querySelector('.list__product');
-        /*const productLine = new ProductLine(wrapper);*/
         this.renderList();
         this.modalWrapper.appendChild(content);
     }
 
-    /*constructor  =================*/
     closePopup() {
         this.modalWrapper.innerHTML = '';
     }
-
 
     renderList() {
         this.listProductsInCart.forEach((product, index) => {
@@ -55,7 +40,6 @@ export class Popup {
             productLine.updateValues = (updatedProduct) => {
                 this.listProductsInCart.set(index, updatedProduct);
             }
-
             productLine.deleteLine = () => {
                 this.listProductsInCart.delete(index);
             }

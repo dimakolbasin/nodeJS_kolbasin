@@ -1,13 +1,12 @@
 export class Counter {
     set value(val: number) {
-
         this.valueInput.value = String(isNaN(val) ? 0 : val);
     }
 
     get value(): number {
-
         return +this.valueInput.value;
     }
+
     valueInput: HTMLInputElement;
     decreaseButton: HTMLElement;
     increaseButton: HTMLElement;
@@ -38,7 +37,5 @@ export class Counter {
         this.updateCounter(this.value);
     }
 
-    public updateCounter(value: number) {
-
-    }
+    public updateCounter(value: number) {}
 }

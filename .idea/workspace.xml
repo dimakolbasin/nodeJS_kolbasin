@@ -20,25 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="237cad6a-423f-435b-bde6-69d29ac57217" name="Default Changelist" comment="28.12 промежуточный">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/adminUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/adminUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/counter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/counter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/common.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/common.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/container.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/container.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mediaQueries/media1024.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mediaQueries/media450.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mediaQueries/media530.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mediaQueries/media736.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mediaQueries/media768.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mediaQueries/media820.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modal.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modal.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/modalPhone.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/modalPhone.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/navigation.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navigation.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/preloader.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/preloader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/staff.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/staff.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/popUp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/popUp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/productLine.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/productLine.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/colors.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/common.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/container.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/footer.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/header.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/modal.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/modalPhone.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/navigation.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/preloader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/staff.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.common.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +171,10 @@
       <workItem from="1608885178102" duration="72063000" />
       <workItem from="1609161455028" duration="3717000" />
       <workItem from="1609188761303" duration="1687000" />
+      <workItem from="1609190669408" duration="479000" />
+      <workItem from="1609191240692" duration="107000" />
+      <workItem from="1609191391178" duration="857000" />
+      <workItem from="1609192294350" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="29.11">
       <created>1606635647477</created>

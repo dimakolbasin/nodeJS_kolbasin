@@ -1,18 +1,10 @@
-import '../styles/style.less'
-
-import { deleteProductFetch } from "./adminUtils"
+import '../assets/themes/base/styles/style.less';
+import { deleteProductFetch } from "./adminUtils";
 import {Popup} from "./popUp";
-
 // @ts-ignore
 import * as data from '../../data/data.json';
 
-
-
-
-
 const listProductsInCart: Map<string, any> = new Map();
-
-
 
 /*adminUtils*/
 
@@ -31,8 +23,6 @@ document.onclick = event => {
 
 /*user utils*/
 
-/*oclicks*/
-
 const modalPh: HTMLElement = document.querySelector('.burger-nav') as HTMLElement;
 
 modalPh.onclick = event => {
@@ -48,7 +38,6 @@ btnPlusArr.forEach((item, index, arr) => {
     }
 });
 
-
 const clModalPh: HTMLElement = document.querySelector('.jsCloseModal') as HTMLElement;
 
 clModalPh.onclick = event => {
@@ -61,16 +50,6 @@ openCart.onclick = event => {
     openPopup();
 }
 
-/*модальное window*/
-
-
-
-
-
-
-
-
-
 function openPopup() {
     preloader();
     setTimeout(function () {
@@ -81,18 +60,14 @@ function openPopup() {
     }, 1000);
 }
 
-/*preloader*/
-
 const preloader = () => {
     let loader = document.querySelector('.loader__container');
     loader.classList.add('show');
 }
 
-/*modal phone*/
-
 const modalPhone = () => {
-    let modalPh = document.querySelector('.modal-phone');
-    modalPh.classList.add('show');
+    let modalPhoneAdd = document.querySelector('.modal-phone');
+    modalPhoneAdd.classList.add('show');
 }
 
 const closeModalPhone = () => {
@@ -100,25 +75,10 @@ const closeModalPhone = () => {
     modalPhCls.classList.remove('show');
 }
 
-
-/*busket add*/
-
-
-// const totalPriceCart = new Map();
-
-
-
 // @ts-ignore
-let generalCatalog = data.splice(generalCatalogs);
+let generalCatalog = data.splice(catalogTemplate);
 
-let generalCatalogs = [
-/*    {name: 'IPHONE XR 512GB', price: 1300, count: 0, totalPrice: 0},
-    {name: 'IPHONE XR 256GB', price: 1100, count: 0, totalPrice: 0},
-    {name: 'IPHONE XR 128GB', price: 900, count: 0, totalPrice: 0},
-    {name: 'IPHONE XR 64GB', price: 799, count: 0, totalPrice: 0},
-    {name: 'IPHONE XR 64GB DUAL SIM', price: 1000, count: 0, totalPrice: 0},
-    {name: 'IPHONE XR 128GB DUAL SIM', price: 1300, count: 0, totalPrice: 0}*/
-];
+let catalogTemplate = [];
 
 const productsWithDiscount = ['IPHONE XR 512GB', 'IPHONE XR 256GB', 'IPHONE XR 128GB'];
 
@@ -130,7 +90,6 @@ function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
         } else {
             return product;
         }
-
     })
 }
 
@@ -140,7 +99,6 @@ const newDiscount = (discount) => {
     };
 };
 
-
 const transformPriceByDiscount = (product) => {
     return {
         ...product,
@@ -148,15 +106,9 @@ const transformPriceByDiscount = (product) => {
     };
 }
 
-
-
-/**/
-
-
 const addToCart = (index) => {
 
     const catalog = getCatalogWithDiscount(generalCatalog, productsWithDiscount);
-    /*const product = catalog[index];*/
 
     if (listProductsInCart.has(index) === true) {
         let productFromCart = listProductsInCart.get(index)
@@ -164,25 +116,20 @@ const addToCart = (index) => {
         productFromCart.totalPrice = productFromCart.count * productFromCart.price;
         listProductsInCart.set(index, productFromCart);
 
-
     } else {
         const product = catalog[index];
         ++product.count;
         product.totalPrice = product.count * product.price;
         listProductsInCart.set(index, product);
-
     }
 
-
-    const bodyCounter: HTMLElement = document.querySelector('.body-counter')
+    const bodyCounter: HTMLElement = document.querySelector('.body-counter');
         bodyCounter.innerText = String((counterCart()));
 }
-
 
 const counterCart = () => {
     let counter = 0;
     listProductsInCart.forEach(value => counter += value.count);
-
     return counter
 }
 
