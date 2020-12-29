@@ -1,7 +1,6 @@
 import '../assets/themes/base/styles/style.less';
 import { deleteProductFetch } from "./adminUtils";
 import {Popup} from "./popUp";
-// @ts-ignore
 import * as data from '../../data/data.json';
 
 const listProductsInCart: Map<string, any> = new Map();
@@ -124,7 +123,7 @@ const addToCart = (index) => {
     }
 
     const bodyCounter: HTMLElement = document.querySelector('.body-counter');
-        bodyCounter.innerText = String((counterCart()));
+    bodyCounter.innerText = String((counterCart()));
 }
 
 const counterCart = () => {
@@ -132,4 +131,3 @@ const counterCart = () => {
     listProductsInCart.forEach(value => counter += value.count);
     return counter
 }
-
