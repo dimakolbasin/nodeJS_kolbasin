@@ -1,7 +1,10 @@
 import '../assets/themes/base/styles/style.less';
 import { deleteProductFetch } from "./adminUtils";
 import {Popup} from "./popUp";
+import {Products} from "./products";
 import * as data from '../../data/data.json';
+
+
 
 const listProductsInCart: Map<string, any> = new Map();
 
@@ -18,15 +21,15 @@ document.onclick = event => {
             alert('error');
         });
     }
-}
+};
 
 /*user utils*/
 
-const modalPh: HTMLElement = document.querySelector('.burger-nav') as HTMLElement;
+const modalPhoneAdd: HTMLElement = document.querySelector('.burger-nav') as HTMLElement;
 
-modalPh.onclick = event => {
+modalPhoneAdd.onclick = event => {
     modalPhone();
-}
+};
 
 const btnPlusArr: NodeListOf<HTMLElement> = document.querySelectorAll('.btn-plus');
 
@@ -37,51 +40,51 @@ btnPlusArr.forEach((item, index, arr) => {
     }
 });
 
-const clModalPh: HTMLElement = document.querySelector('.jsCloseModal') as HTMLElement;
+const ModalPhoneDrop: HTMLElement = document.querySelector('.jsCloseModal') as HTMLElement;
 
-clModalPh.onclick = event => {
+ModalPhoneDrop.onclick = event => {
     closeModalPhone();
-}
+};
 
 const openCart: HTMLElement = document.querySelector('.open-cart') as HTMLElement;
 
 openCart.onclick = event => {
     openPopup();
-}
+};
 
-function openPopup() {
+const openPopup = (): void => {
     preloader();
     setTimeout(function () {
-        let loader = document.querySelector('.loader__container');
+        let loader: HTMLElement = document.querySelector('.loader__container');
         loader.classList.remove('show');
         const popup = new Popup(listProductsInCart);
 
     }, 1000);
 }
 
-const preloader = () => {
-    let loader = document.querySelector('.loader__container');
+const preloader = (): void => {
+    let loader: HTMLElement = document.querySelector('.loader__container');
     loader.classList.add('show');
-}
+};
 
-const modalPhone = () => {
-    let modalPhoneAdd = document.querySelector('.modal-phone');
+const modalPhone = (): void => {
+    let modalPhoneAdd: HTMLElement = document.querySelector('.modal-phone');
     modalPhoneAdd.classList.add('show');
 }
 
-const closeModalPhone = () => {
-    let modalPhCls = document.querySelector('.modal-phone');
+const closeModalPhone = (): void => {
+    let modalPhCls: HTMLElement = document.querySelector('.modal-phone');
     modalPhCls.classList.remove('show');
 }
 
 // @ts-ignore
-let generalCatalog = data.splice(catalogTemplate);
+let generalCatalog: [string, number] = data.splice(catalogTemplate);
 
-let catalogTemplate = [];
+let catalogTemplate: [] = [];
 
-const productsWithDiscount = ['IPHONE XR 512GB', 'IPHONE XR 256GB', 'IPHONE XR 128GB'];
+const productsWithDiscount: [string, string, string] = ['IPHONE XR 512GB', 'IPHONE XR 256GB', 'IPHONE XR 128GB'];
 
-function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
+const getCatalogWithDiscount = (generalCatalog, productsWithDiscount): [] => {
 
     return generalCatalog.map((product) => {
         if(productsWithDiscount.includes(product.name)){
@@ -92,20 +95,20 @@ function getCatalogWithDiscount(generalCatalog, productsWithDiscount) {
     })
 }
 
-const newDiscount = (discount) => {
+const newDiscount = (discount): any => {
     return (price) => {
         return price - price * discount;
     };
 };
 
-const transformPriceByDiscount = (product) => {
+const transformPriceByDiscount = (product): any => {
     return {
         ...product,
         price: (newDiscount(0.5)(product.price)) // add discount 50%
     };
-}
+};
 
-const addToCart = (index) => {
+const addToCart = (index): void => {
 
     const catalog = getCatalogWithDiscount(generalCatalog, productsWithDiscount);
 
@@ -116,18 +119,18 @@ const addToCart = (index) => {
         listProductsInCart.set(index, productFromCart);
 
     } else {
-        const product = catalog[index];
+        const product: Products = catalog[index];
         ++product.count;
         product.totalPrice = product.count * product.price;
         listProductsInCart.set(index, product);
-    }
+    };
 
     const bodyCounter: HTMLElement = document.querySelector('.body-counter');
     bodyCounter.innerText = String((counterCart()));
-}
+};
 
-const counterCart = () => {
-    let counter = 0;
+const counterCart = (): number => {
+    let counter: number = 0;
     listProductsInCart.forEach(value => counter += value.count);
     return counter
-}
+};

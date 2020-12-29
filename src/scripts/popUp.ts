@@ -1,33 +1,31 @@
 import {ProductLine} from "./productLine";
+import {Products} from "./products";
+import {popUpInterface} from "./popUpInterface";
 
-export class Popup {
+export class Popup implements popUpInterface{
 
-    cartCounter: HTMLElement;
-    modalWrapper: HTMLElement;
-    modal: HTMLTemplateElement;
-    wrapper: HTMLElement;
-    private listProductsInCart: Map<string, any>;
+    modal = <HTMLTemplateElement>document.getElementById('modal');
+    modalWrapper = document.getElementById('modal-wrapper');
+    cartCounter = document.getElementById('body-counter');
+    content = document.importNode(this.modal.content, true);
+    wrapper = <HTMLElement>this.content.querySelector('.list__product');
 
-    constructor(listProductsInCart: Map<string, any>) {
+    constructor(private listProductsInCart: Map<string, Products>) {
 
         this.listProductsInCart = listProductsInCart;
-        this.modal = <HTMLTemplateElement>document.getElementById('modal');
-        this.modalWrapper = document.getElementById('modal-wrapper');
-        this.cartCounter = document.getElementById('body-counter');
-        const content = document.importNode(this.modal.content, true);
-        const contentEvent: HTMLElement = content.querySelector('.modal__btn-close');
+
+        const contentEvent: HTMLElement = this.content.querySelector('.modal__btn-close');
 
         contentEvent.onclick = (event:MouseEvent) => {
             this.closePopup();
         };
 
-        (content.querySelector('.modal__btn-drop') as HTMLElement).onclick = (event) => {
+        (this.content.querySelector('.modal__btn-drop') as HTMLElement).onclick = (event) => {
             this.removeAllProducts();
         };
 
-        this.wrapper = content.querySelector('.list__product');
         this.renderList();
-        this.modalWrapper.appendChild(content);
+        this.modalWrapper.appendChild(this.content);
     }
 
     closePopup() {
@@ -36,9 +34,9 @@ export class Popup {
 
     renderList() {
         this.listProductsInCart.forEach((product, index) => {
-            const productLine = new ProductLine(this.wrapper, product, index);
+            const productLine = new ProductLine(this.wrapper, product, Number(index));
             productLine.updateValues = (updatedProduct) => {
-                this.listProductsInCart.set(index, updatedProduct);
+                this.listProductsInCart.set(index, <Products>updatedProduct);
             }
             productLine.deleteLine = () => {
                 this.listProductsInCart.delete(index);

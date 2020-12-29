@@ -1,4 +1,6 @@
-export class Counter {
+import {CounterInterface} from "./counterInterface";
+
+export class Counter implements CounterInterface{
     set value(val: number) {
         this.valueInput.value = String(isNaN(val) ? 0 : val);
     }
@@ -6,25 +8,19 @@ export class Counter {
     get value(): number {
         return +this.valueInput.value;
     }
-
-    valueInput: HTMLInputElement;
-    decreaseButton: HTMLElement;
-    increaseButton: HTMLElement;
+    template = <HTMLTemplateElement>document.getElementById("counterTemplate");
+    contentCounter = document.importNode(this.template.content, true);
+    valueInput = <HTMLInputElement>this.contentCounter.querySelector(".jsValue");
+    decreaseButton = <HTMLElement>this.contentCounter.querySelector(".jsDecrease");
+    increaseButton = <HTMLElement>this.contentCounter.querySelector(".jsIncrease");
 
     constructor(wrapper) {
-        const template: HTMLTemplateElement = <HTMLTemplateElement>document.getElementById("counterTemplate");
-        const contentCounter = document.importNode(template.content, true);
-
-        this.valueInput = contentCounter.querySelector(".jsValue");
-        this.decreaseButton = contentCounter.querySelector(".jsDecrease");
-        this.increaseButton = contentCounter.querySelector(".jsIncrease");
-
 
         this.valueInput.onblur = (event) => (this.value = Number((event.target as HTMLInputElement).value));
         this.increaseButton.onclick = () => this.increase();
         this.decreaseButton.onclick = () => this.decrease();
 
-        wrapper.appendChild(contentCounter);
+        wrapper.appendChild(this.contentCounter);
     }
 
     increase() {

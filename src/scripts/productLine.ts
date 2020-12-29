@@ -1,25 +1,23 @@
 import {Counter} from "./counter";
+import {ProductLineInterface} from "./productLineInterface";
 
-export class ProductLine {
 
-    lineElement: HTMLElement;
-    productPrice: HTMLElement;
-    productName: HTMLElement;
-    productCount: HTMLElement;
-    updateValues: (updatedProduct) => void;
-    private index: any;
+export class ProductLine implements ProductLineInterface {
 
-    constructor(wrapper, product, index) {
+    productLine = <HTMLTemplateElement>document.getElementById('product-line');
 
-        let productLine:HTMLTemplateElement = <HTMLTemplateElement>document.getElementById('product-line');
-        const productContent = document.importNode(productLine.content, true);
+    productContent = document.importNode(this.productLine.content, true);
 
-        this.lineElement = productContent.getElementById('items');
-        this.productName = productContent.getElementById('name');
-        this.productCount = productContent.getElementById('count');
-        this.productPrice = productContent.getElementById('price');
+    lineElement = this.productContent.getElementById('items');
+    productName = this.productContent.getElementById('name');
+    productCount = this.productContent.getElementById('count');
+    productPrice = this.productContent.getElementById('price');
 
-        productContent.getElementById('drop-product').onclick = (event) => {
+
+    constructor(wrapper, product, private index: number) {
+
+
+        this.productContent.getElementById('drop-product').onclick = (event) => {
             this.deleteLine();
             this.lineElement.remove();
         };
@@ -39,8 +37,8 @@ export class ProductLine {
             });
             this.productPrice.innerText = String(value * product.price);
         };
-
-        wrapper.appendChild(productContent);
+        wrapper.appendChild(this.productContent);
     }
-    deleteLine(): void {};
+    public updateValues = (param: { totalPrice: number; price: number; name: string; count: number }) => {};
+    public deleteLine(){};
 }
