@@ -1,21 +1,27 @@
 import {Counter} from "./counter";
-import {ProductLineInterface} from "./productLineInterface";
+import {Product} from "./product";
 
 
-export class ProductLine implements ProductLineInterface {
+export class ProductLine {
 
-    productLine = <HTMLTemplateElement>document.getElementById('product-line');
-
-    productContent = document.importNode(this.productLine.content, true);
-
-    lineElement = this.productContent.getElementById('items');
-    productName = this.productContent.getElementById('name');
-    productCount = this.productContent.getElementById('count');
-    productPrice = this.productContent.getElementById('price');
+    private lineElement: HTMLElement;
+    private productPrice: HTMLElement;
+    private productName: HTMLElement;
+    private readonly productCount: HTMLElement;
+    private readonly productContent: DocumentFragment;
+    private productLine:HTMLTemplateElement;
 
 
-    constructor(wrapper, product, private index: number) {
+    constructor(wrapper: HTMLElement, product: Product, private index: number) {
 
+        this.productLine = <HTMLTemplateElement>document.getElementById('product-line');
+
+        this.productContent = document.importNode(this.productLine.content, true);
+
+        this.lineElement = this.productContent.getElementById('items');
+        this.productName = this.productContent.getElementById('name');
+        this.productCount = this.productContent.getElementById('count');
+        this.productPrice = this.productContent.getElementById('price');
 
         this.productContent.getElementById('drop-product').onclick = (event) => {
             this.deleteLine();
@@ -23,10 +29,10 @@ export class ProductLine implements ProductLineInterface {
         };
 
         this.productName.innerText = product.name;
-        this.productPrice.innerText = product.price;
+        this.productPrice.innerText = String(product.price);
 
         this.index = index;
-        const counter = new Counter(this.productCount); // New Counter
+        const counter: Counter = new Counter(this.productCount); // New Counter
         counter.value = product.count;
         counter.updateCounter = (value) => {
             this.updateValues({
@@ -34,11 +40,11 @@ export class ProductLine implements ProductLineInterface {
                 count: value,
                 price: product.price,
                 totalPrice: value * product.price
-            });
+            } as Product);
             this.productPrice.innerText = String(value * product.price);
         };
         wrapper.appendChild(this.productContent);
     }
-    public updateValues = (param: { totalPrice: number; price: number; name: string; count: number }) => {};
-    public deleteLine(){};
+    public updateValues = (param: Product): void => {};
+    public deleteLine(): void{};
 }

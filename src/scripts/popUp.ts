@@ -1,16 +1,21 @@
 import {ProductLine} from "./productLine";
-import {Products} from "./products";
-import {popUpInterface} from "./popUpInterface";
+import {Product} from "./product";
 
-export class Popup implements popUpInterface{
+export class Popup{
 
-    modal = <HTMLTemplateElement>document.getElementById('modal');
-    modalWrapper = document.getElementById('modal-wrapper');
-    cartCounter = document.getElementById('body-counter');
-    content = document.importNode(this.modal.content, true);
-    wrapper = <HTMLElement>this.content.querySelector('.list__product');
+    private cartCounter: HTMLElement;
+    private modalWrapper: HTMLElement;
+    private modal: HTMLTemplateElement;
+    private readonly wrapper: HTMLElement;
+    private readonly content: DocumentFragment;
 
-    constructor(private listProductsInCart: Map<string, Products>) {
+    constructor(private listProductsInCart: Map<string, Product>) {
+
+        this.modal = <HTMLTemplateElement>document.getElementById('modal');
+        this.modalWrapper = document.getElementById('modal-wrapper');
+        this.cartCounter = document.getElementById('body-counter');
+        this.content = document.importNode(this.modal.content, true);
+        this.wrapper = <HTMLElement>this.content.querySelector('.list__product');
 
         this.listProductsInCart = listProductsInCart;
 
@@ -28,15 +33,15 @@ export class Popup implements popUpInterface{
         this.modalWrapper.appendChild(this.content);
     }
 
-    closePopup() {
+    private closePopup(): void {
         this.modalWrapper.innerHTML = '';
     }
 
-    renderList() {
+    private renderList(): void {
         this.listProductsInCart.forEach((product, index) => {
             const productLine = new ProductLine(this.wrapper, product, Number(index));
             productLine.updateValues = (updatedProduct) => {
-                this.listProductsInCart.set(index, <Products>updatedProduct);
+                this.listProductsInCart.set(index, <Product>updatedProduct);
             }
             productLine.deleteLine = () => {
                 this.listProductsInCart.delete(index);
@@ -44,7 +49,7 @@ export class Popup implements popUpInterface{
         });
     }
 
-    removeAllProducts() {
+    private removeAllProducts(): void {
         this.cartCounter.innerHTML = '';
         this.listProductsInCart.clear();
         this.wrapper.innerHTML = '';

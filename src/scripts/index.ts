@@ -1,19 +1,15 @@
 import '../assets/themes/base/styles/style.less';
 import { deleteProductFetch } from "./adminUtils";
 import {Popup} from "./popUp";
-import {Products} from "./products";
+import {Product} from "./product";
 import * as data from '../../data/data.json';
 
+const listProductsInCart: Map<string, Product> = new Map();
 
-
-const listProductsInCart: Map<string, any> = new Map();
-
-/*adminUtils*/
-
-document.onclick = event => {
-    if ((<HTMLInputElement>event.target).classList.contains('drop__product')) {
-        const dataId: string = (<HTMLInputElement>event.target).dataset.id;
-        const dataUrl: string = (<HTMLInputElement>event.target).dataset.url;
+document.onclick = (event: MouseEvent) => {
+    if ((<HTMLElement>event.target).classList.contains('drop__product')) {
+        const dataId: string = (<HTMLElement>event.target).dataset.id;
+        const dataUrl: string = (<HTMLElement>event.target).dataset.url;
         deleteProductFetch(dataUrl, dataId).then(value => {
             const item = document.querySelector('.product-' + dataId);
             item.remove();
@@ -23,17 +19,15 @@ document.onclick = event => {
     }
 };
 
-/*user utils*/
+const burgerButtonElement: HTMLElement = document.querySelector('.burger-nav') as HTMLElement;
 
-const modalPhoneAdd: HTMLElement = document.querySelector('.burger-nav') as HTMLElement;
-
-modalPhoneAdd.onclick = event => {
+burgerButtonElement.onclick = event => {
     modalPhone();
 };
 
-const btnPlusArr: NodeListOf<HTMLElement> = document.querySelectorAll('.btn-plus');
+const buyButtons: NodeListOf<HTMLElement> = document.querySelectorAll('.btn-plus');
 
-btnPlusArr.forEach((item, index, arr) => {
+buyButtons.forEach((item: HTMLElement) => {
     let dataId: string = item.dataset.id;
     item.onclick = event => {
         addToCart(dataId);
@@ -58,7 +52,6 @@ const openPopup = (): void => {
         let loader: HTMLElement = document.querySelector('.loader__container');
         loader.classList.remove('show');
         const popup = new Popup(listProductsInCart);
-
     }, 1000);
 }
 
@@ -77,12 +70,9 @@ const closeModalPhone = (): void => {
     modalPhCls.classList.remove('show');
 }
 
-// @ts-ignore
-let generalCatalog: [string, number] = data.splice(catalogTemplate);
+let generalCatalog: Product[] = [...<Product[]>data];
 
-let catalogTemplate: [] = [];
-
-const productsWithDiscount: [string, string, string] = ['IPHONE XR 512GB', 'IPHONE XR 256GB', 'IPHONE XR 128GB'];
+const productsWithDiscount: string[] = ['IPHONE XR 512GB', 'IPHONE XR 256GB', 'IPHONE XR 128GB'];
 
 const getCatalogWithDiscount = (generalCatalog, productsWithDiscount): [] => {
 
@@ -101,7 +91,7 @@ const newDiscount = (discount): any => {
     };
 };
 
-const transformPriceByDiscount = (product): any => {
+const transformPriceByDiscount = (product): Product => {
     return {
         ...product,
         price: (newDiscount(0.5)(product.price)) // add discount 50%
@@ -119,7 +109,7 @@ const addToCart = (index): void => {
         listProductsInCart.set(index, productFromCart);
 
     } else {
-        const product: Products = catalog[index];
+        const product: Product = catalog[index];
         ++product.count;
         product.totalPrice = product.count * product.price;
         listProductsInCart.set(index, product);
